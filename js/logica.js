@@ -26,7 +26,7 @@ $("#miForm").submit(function(e){
   e.preventDefault();
   var data = $(this).serialize();
   $.ajax({
-      url: "http://localhost:8080/banco/php/post.php",
+      url: "https://bancoexamen.herokuapp.com/php/post.php",
       type: "POST",
       data: data,
       dataType: 'JSON',
